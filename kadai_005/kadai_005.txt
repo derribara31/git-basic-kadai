@@ -1,0 +1,61 @@
+PS C:\Users\yk31r> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\yk31r
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/12/29     15:20                git_challenge
+
+
+PS C:\Users\yk31r> cd git_challenge
+PS C:\Users\yk31r\git_challenge> git init
+Initialized empty Git repository in C:/Users/yk31r/git_challenge/.git/
+PS C:\Users\yk31r\git_challenge> git add hello_world.txt
+PS C:\Users\yk31r\git_challenge> git commit -m "add hello world"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'yk31r@koki31.(none)')
+PS C:\Users\yk31r\git_challenge> git config --global user.email "test@test.com"   
+PS C:\Users\yk31r\git_challenge> git config --global user.name "test"      
+PS C:\Users\yk31r\git_challenge> git commit -m "add hello world"
+[main (root-commit) f27de34] add hello world
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\yk31r\git_challenge> git add hello_world.txt
+PS C:\Users\yk31r\git_challenge> git commit -m "add hello world"
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\yk31r\git_challenge> cd ..
+PS C:\Users\yk31r> cd kadai_005
+PS C:\Users\yk31r\kadai_005> git init
+Initialized empty Git repository in C:/Users/yk31r/kadai_005/.git/
+PS C:\Users\yk31r\kadai_005> git add .
+PS C:\Users\yk31r\kadai_005> git commit -m "first commit"
+[main (root-commit) 0c0513d] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 kadai_005.txt
+PS C:\Users\yk31r\kadai_005> git branch -M main
+>>
+PS C:\Users\yk31r\kadai_005> git remote add origin https://github.com/derribara31/git-basic-kadai.git
+PS C:\Users\yk31r\kadai_005> git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 203 bytes | 203.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/derribara31/git-basic-kadai.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\yk31r\kadai_005>
